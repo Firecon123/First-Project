@@ -1,21 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eldar's Resume Extended</title>
     <link rel = "stylesheet" href = "Baseline.css">
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+    <!-- <style>
         body{
-            color:cadetblue;
-            background:black;
+            color:whitesmoke;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <img scr = "images\UB.png">
-    <Section class="StartPage">
+    <!-- <img src = "images\UB.png"> -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src = "images\UB_Primary_SUNY.png"></a>
+            <div class = "nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSES</a></li>
+                        <li><a href="">PROJECTS</a></li>
+                        <li><a href="">LINKS</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class ="text-box">
+            <h1>Quick Fact</h1>
+            <p>
+                This is a website i've made for fun into order<br>to expand my resume and to use as a hub for myself
+            </p>
+            <a href="" class="hero-btn">My Projects</a>
+        </div>
+    </section>
 
-    </Section>
+<!-- Courses Section -->
+<section class="courses">
+    <h1>Courses I've Taken</h1>
+    <p>List Courses Here Later</p>
+
+    <div class="row">
+        <div class="courses-col">
+            <h3>CSE 115</h3>
+            <p>Describe Courses Here Later</p>
+        </div>
+        <div class="courses-col">
+            <h3>CSE 116</h3>
+            <p>Describe Courses Here Later</p>
+        </div>
+        <div class="courses-col">
+            <h3>CSE 220</h3>
+            <p>Describe Courses Here Later</p>
+        </div>
+        <div class="courses-col">
+            <h3>CSE 191</h3>
+            <p>Describe Courses Here Later</p>
+        </div>
+        <div class="courses-col">
+            <h3>CSE 250</h3>
+            <p>Describe Courses Here Later</p>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects">
+    <h1>Projects i've made or am working on</h1>
+        <div class="rowProject">
+            <div class="project-col">
+                <img src = "images/UB.png">
+                <div class="layer">
+                    <h3>Example</h3>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+<!-- JavaScript to Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
 </body>
 </html>
