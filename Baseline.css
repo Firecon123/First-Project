@@ -27,7 +27,19 @@ nav img{
     text-align: right;
 }
 .nav-links button{
-    background-color: transparent;
+    background:transparent;
+    border:none;
+    outline:none;
+    display:block;
+    height:15px;
+    width:80px;
+    cursor:pointer;
+    outline: none;
+    color: rgb(255, 255, 255 , 0);
+}
+.nav-links button:hover{
+    background-color: rgb(139, 102, 175 , 0.2);
+    color: #fff;
 }
 .nav-links ul li{
     list-style: none;
@@ -223,33 +235,125 @@ nav .fa{
 }
 /* Links Section */
 
-.links{
-    /* width: 80%;
-    margin-left: 40%;
-    text-align: center;
-    padding-top: 100px; */
+.links {
     display: inline-block;
-    margin-left: 35%;
-    margin-right: auto;
-    font-size: 13vh; 
+    margin-left: 40%;
+    font-size: 9vh;
 }
-.links h1{
+
+.links h1 {
     font-size: 40px;
     font-weight: bolder;
     text-align: center;
 }
-.links-col img{
-    width: 13vh;
+
+.links-col {
+    position: relative;
+    display: inline-block;
 }
-.fa{
+
+.popup-trigger{
+    width: 8vh;
+    height: auto;
+    margin: 0 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-image {
+    width: 60%;
+    max-width: none;
+    max-height: none;
+    height: auto;
+}
+
+.popup-trigger:hover + .popup, .popup:hover {
+    display: block;
+}
+
+.fa {
     color: blue;
 }
-.fa:hover{
-    color:rgb(128, 0, 128 , 0.7)
+
+.fa:hover {
+    color: rgb(128, 0, 128, 0.7);
 }
-@media(max-width: 700px){
-    .links h1{
+
+/* .links {
+    display: inline-block;
+    margin-left: 40%;
+    font-size: 9vh;
+}
+
+.links h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.links-col {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-trigger {
+    width: 8vh; 
+    height: auto;
+    margin: 0 10px;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    width: 75%;
+    max-width: none; 
+    max-height: none;
+    height: auto; 
+}
+
+.popup-trigger:hover + .popup-container,
+.popup-container:hover {
+    display: flex;
+}
+
+.fa {
+    color: blue;
+}
+
+.fa:hover {
+    color: rgb(128, 0, 128, 0.7);
+} */
+
+@media (max-width: 700px) {
+    .links h1 {
         display: block;
         margin-right: 150px;
+    }
+
+    .links-col img,
+    .fa {
+        width: 50px; /* Adjust the width for icons on smaller screens */
+        margin: 0 5px; /* Adjust the margin between icons on smaller screens */
+    }
+
+    .popup-image {
+        width: 90%; /* Adjust the width of the popup image on smaller screens */
+        max-width: none; /* Remove the maximum width on smaller screens */
     }
 }
