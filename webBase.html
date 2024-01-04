@@ -18,16 +18,18 @@
 <body>
     <!-- <img src = "images\UB.png"> -->
     <section class="header">
+        <a id="home-anchor" data-hs-anchor="true"></a>
         <nav>
             <a href="index.html"><img src = "images\UB_Primary_SUNY.png"></a>
             <div class = "nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="">HOME</a></li>
-                        <li><a href="">ABOUT</a></li>
-                        <li><a href="">COURSES</a></li>
-                        <li><a href="">PROJECTS</a></li>
-                        <li><a href="">LINKS</a></li>
+                        <!-- <a href="#top-anchor" rel="noopener">Click here</a> -->
+                        <li><a href="#home-anchor"rel="noopener">HOME</a></li>
+                        <li><a href="#about-anchor"rel="noopener">ABOUT</a></li>
+                        <li><a href="#courses-anchor"rel="noopener">COURSES</a></li>
+                        <li><a href="#projects-anchor"rel="noopener">PROJECTS</a></li>
+                        <li><a href="#links-anchor"rel="noopener">LINKS</a></li>
                         <button type="button" onclick="alert('This Is the Best Thing Ive Coded / Girlfriend Button')">FUN BUTTON</button>
                     </ul>
             </div>
@@ -38,12 +40,17 @@
             <p>
                 This is a website i've made for fun into order<br>to expand my resume and to use as a hub for myself
             </p>
-            <a href="" class="hero-btn">My Projects</a>
+            <a href="#projects-anchor"rel="noopener" class="hero-btn">My Projects</a>
         </div>
     </section>
+<!-- About Section -->
+<section class="about">
+    <a id="about-anchor" data-hs-anchor="true"></a>
+</section>
 
 <!-- Courses Section -->
 <section class="courses">
+    <a id="courses-anchor" data-hs-anchor="true"></a>
     <h1>Courses I've Taken</h1>
     <p>List Courses Here Later</p>
 
@@ -73,6 +80,7 @@
 
 <!-- Projects Section -->
 <section class="projects">
+    <a id="projects-anchor" data-hs-anchor="true"></a>
     <h1>Projects i've made or am working on</h1>
         <div class="row">
             <div class="project-col">
@@ -98,6 +106,7 @@
 
 <!-- Links Section -->
 <section class="links">
+    <a id="links-anchor" data-hs-anchor="true"></a>
     <h1>Links to all my socals</h1>
     <div class="row">
         <div class="links-col">
