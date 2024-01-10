@@ -348,7 +348,7 @@ nav .fa{
 
     .links-col img,
     .fa {
-        width: 50px; /* Adjust the width for icons on smaller screens */
+        width: 100px; /* Adjust the width for icons on smaller screens */
         margin: 0 5px; /* Adjust the margin between icons on smaller screens */
     }
 
@@ -444,9 +444,9 @@ background: linear-gradient(to right, #434343, #000000);
     }
   }
   .left-container img {
-    width: 200px;
-    height: 200px;
-    max-width: 200px;
+    width: 340px;
+    height: 400px;
+    max-width: 400px;
     border-radius: 50%;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -483,7 +483,7 @@ background: linear-gradient(to right, #434343, #000000);
   }
   
   td {
-    
+    font-size: larger;
     padding: 10px;
     border: none;
     border-radius: 20px;
@@ -491,7 +491,7 @@ background: linear-gradient(to right, #434343, #000000);
   }
   
   td:first-child {
-    font-weight: bold;
+    font-weight: bolder;
   }
   .credit a {
   text-decoration: none;
